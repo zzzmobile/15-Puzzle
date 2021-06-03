@@ -1,0 +1,94 @@
+/**
+ * puzzle.css
+ *
+ * Developed by James Wang
+ * June 3rd, 2021
+ */
+::selection {
+	background: transparent;
+}
+html, body {height: 100%;}
+p {
+	margin: 0;
+	font: 12px/150% Arial;
+	text-align: center;
+	color: #124261;
+}
+p a {
+	color: #124261;
+}
+
+h1 {
+	text-align: center;
+	margin: auto;
+	font: bold 40px Arial;
+	text-align: center;
+	color: #124261;
+}
+
+#controls {
+	text-align: center;
+	margin: auto;
+}
+#controls button {
+	cursor: pointer;
+	outline: none;	
+	padding: 10px 20px;
+	margin: 25px 2px;
+	border: 0;
+	border-radius: 4px;
+	background: #124261;
+	font: bold 20px Arial;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: -1px -1px 0 rgba(0,0,0, 0.5);
+	color: #fff;
+}
+
+#puzzle {
+	position: relative;
+	width: 405px;
+	height: 405px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border: 2px solid #3c3c3c;
+	border-radius: 4px;
+}
+#puzzle span {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
+}
+#puzzle span.number {
+	cursor: pointer;
+	font: 36px/100px Arial;
+	text-align: center;
+	color: #fff;
+}
+#puzzle span.empty {
+	background: transparent;
+}
+#puzzle span.number {
+	background: #124261;
+}
+
+#puzzle.animate span {
+	-webkit-transition: 0.15s left, 0.15s top;
+ 	transition: 0.15s left, 0.15s top;
+}
+
+#congrats-img {
+	text-align: center;
+	margin-top: 50px;
+}
+#wrapper {
+    margin: 5% auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
